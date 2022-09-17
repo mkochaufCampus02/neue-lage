@@ -1,0 +1,14 @@
+<div class="header">
+  <h1 class="header-text" *ngIf="daysLeft!==1">Neue Lage: {{ daysLeft }} Tage</h1>
+  <h1 class="header-text" *ngIf="daysLeft===1">Neue Lage: {{ daysLeft }} Tag</h1>
+</div>
+
+
+<div class="tiles">
+<mat-grid-list cols="5" rowHeight="5:3">
+  <mat-grid-tile *ngFor="let date of passedDays" class="passed-tile"> {{ date.toLocaleDateString() }}</mat-grid-tile>
+  <mat-grid-tile *ngFor="let date of remainingDays" class="remaining-tile"> {{ date.toLocaleDateString() }}</mat-grid-tile>
+</mat-grid-list>
+<p class="main-text">FH Campus02 - IWI Master</p>
+</div>
+

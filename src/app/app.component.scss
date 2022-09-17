@@ -1,0 +1,57 @@
+.passed-tile{
+    background-color: #0CBB11;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 2rem;
+    color: white;
+}
+
+.remaining-tile{
+    background-color: #DB2B31;
+    font-size: 25px;
+    font-weight: bolder;
+    border-radius: 2rem;
+    color: white;
+}
+
+.tiles
+{
+    margin: 2% 25%;
+}
+
+.header
+{
+    text-align: center;
+    height: 13%;
+}
+
+.header-text
+{
+    height: 100%;
+    padding-top: 45px;
+    font-size: 120px;
+    background: linear-gradient(-45deg, #FFE548, #FFB20F, #FF4B3E, #972D07);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+.main-text
+{
+    text-align: right;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
